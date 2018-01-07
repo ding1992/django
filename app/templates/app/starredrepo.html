@@ -1,0 +1,28 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Starred Repositories</h2>
+<br/>
+
+{% if starredrepo_list %}
+<table class="table table-hover">
+    <tbody>
+        {% for repo in starredrepo_list %}
+        <tr>
+            <td>
+                {{repo.full_name}}
+            </td>
+            <td>
+                <a href="{{repo.html_url}}">{{repo.html_url}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>You don't have starred repositories.</p>
+
+{% endif %}
+
+{% endblock %}
