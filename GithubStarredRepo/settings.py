@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['52.230.68.153',
                  '127.0.0.1',
-                 'http://starredrepo.southeastasia.cloudapp.azure.com/',
+                 'starredrepo.southeastasia.cloudapp.azure.com',
                  'localhost']
 
 
